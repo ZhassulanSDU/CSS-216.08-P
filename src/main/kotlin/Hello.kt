@@ -1,9 +1,9 @@
 //Pathway 2
 //1.4
 
-fun main(args: Array<String>) {
-    println("Hello, ${args[0]}")
-}
+//fun main(args: Array<String>) {
+//    println("Hello, ${args[0]}")
+//}
 
 //2.1
 
