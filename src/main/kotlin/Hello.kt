@@ -170,7 +170,7 @@
 //    println ("Today is $day and the fish eat $food")
 //}
 
-//4.1.1(2 also)
+//4.1.1; 4.1.2
 
 //fun swim(speed: String = "fast") {
 //    println("swimming $speed")
@@ -184,7 +184,7 @@
 //    swim(speed = "turtle-like")
 //}
 
-//4.2.1(2 also)
+//4.2.1; 4.2.2
 
 //import java.util.*
 //
@@ -224,7 +224,7 @@
 //    }
 //}
 
-//4.3.1(2 also)
+//4.3.1; 4.3.2
 
 //import java.util.*
 //
@@ -270,7 +270,7 @@
 //
 //fun isSunday(day: String) = day == "Sunday"
 
-//5.1.1(2 also)
+//5.1.1; 5.1.2
 
 //val decorations = listOf ("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
 //
@@ -278,25 +278,22 @@
 //    println( decorations.filter {it[0] == 'p'})
 //}
 
-//5.2
+//5.2.1; 5.2.2; 5.2.3
 
 //fun main() {
 //    val decorations = listOf("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
-//
 //    // eager, creates a new list
 //    val eager = decorations.filter { it[0] == 'p' }
 //    println("eager: $eager")
-//
 //    // lazy, will wait until asked to evaluate
 //    val filtered = decorations.asSequence().filter { it[0] == 'p' }
 //    println("filtered: $filtered")
-//
 //    // force evaluation of the lazy list
 //    val newList = filtered.toList()
 //    println("new list: $newList")
 //}
 
-//5.3
+//5.2.5; 5.2.6
 
 //fun main() {
 //    val decorations = listOf("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
@@ -305,20 +302,28 @@
 //        println("access: $it")
 //        it
 //    }
-//
 //    println("lazy: $lazyMap")
 //    println("-----")
 //    println("first: ${lazyMap.first()}")
 //    println("-----")
 //    println("all: ${lazyMap.toList()}")
-//
-//    val lazyMap2 = decorations.asSequence().filter {it[0] == 'p'}.map {
+//}
+
+//5.2.8; 5.2.9
+
+//fun main() {
+//    val decorations = listOf("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
+//    val lazyMap2 = decorations.asSequence().filter { it[0] == 'p' }.map {
 //        println("access: $it")
 //        it
 //    }
 //    println("-----")
 //    println("filtered: ${lazyMap2.toList()}")
-//
+//}
+
+//5.2.10; 5.2.11
+
+//fun main() {
 //    val mysports = listOf("basketball", "fishing", "running")
 //    val myplayers = listOf("LeBron James", "Ernest Hemingway", "Usain Bolt")
 //    val mycities = listOf("Los Angeles", "Chicago", "Jamaica")
@@ -327,7 +332,7 @@
 //    println("Flat: ${mylist.flatten()}")
 //}
 
-//6.1
+//6.1.1
 
 //fun main(){
 //
@@ -336,7 +341,7 @@
 //    println(waterFilter(dirtyLevel))
 //}
 
-//6.2
+//6.1.2; 6.2.1; 6.2.2
 
 //fun main(){
 //
@@ -349,7 +354,7 @@
 //    return operation(dirty)
 //}
 
-//6.3
+//6.2.3
 
 //fun main(){
 //
@@ -363,7 +368,7 @@
 //    return operation(dirty)
 //}
 
-//6.4
+//6.2.4
 
 //fun main(){
 //
