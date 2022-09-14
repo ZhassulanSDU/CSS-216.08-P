@@ -1,4 +1,9 @@
 //Pathway 2
+//1.2
+//fun main(args: Array<String>) {
+//    println("Hello, world!")
+//}
+
 //1.4
 
 //fun main(args: Array<String>) {
@@ -29,7 +34,7 @@
 //    println(message)
 //}
 
-//3.1
+//3.1.1
 
 //import java.util.*
 //
@@ -48,13 +53,146 @@
 //    return week[Random().nextInt(week.size)]
 //}
 
-//3.2
+//3.1.2
+
+//import java.util.*
+//
+//fun feedTheFish() {
+//    val day = randomDay()
+//    val food = "pellets"
+//    println ("Today is $day and the fish eat $food")
+//}
+//
+//fun main(args: Array<String>) {
+//    feedTheFish()
+//}
+//
+//fun randomDay() : String {
+//    val week = arrayOf ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+//    return week[Random().nextInt(week.size)]
+//}
+
+//3.2.1
+
+//import java.util.*
+//
+//fun main(args: Array<String>) {
+//    feedTheFish()
+//}
+//
+//fun randomDay() : String {
+//    val week = arrayOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+//    return week[Random().nextInt(week.size)]
+//}
+//
+//fun fishFood (day : String) : String {
+//    var food = ""
+//    when (day) {
+//        "Monday" -> food = "flakes"
+//        "Tuesday" -> food = "pellets"
+//        "Wednesday" -> food = "redworms"
+//        "Thursday" -> food = "granules"
+//        "Friday" -> food = "mosquitoes"
+//        "Saturday" -> food = "lettuce"
+//        "Sunday" -> food = "plankton"
+//    }
+//    return food
+//}
+//
+//fun feedTheFish() {
+//    val day = randomDay()
+//    val food = fishFood(day)
+//
+//    println ("Today is $day and the fish eat $food")
+//}
+
+//3.2.2
+
+//import java.util.*
+//
+//fun main(args: Array<String>) {
+//    feedTheFish()
+//}
+//
+//fun randomDay() : String {
+//    val week = arrayOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+//    return week[Random().nextInt(week.size)]
+//}
+//
+//fun fishFood (day : String) : String {
+//    val food : String
+//    when (day) {
+//        "Monday" -> food = "flakes"
+//        "Wednesday" -> food = "redworms"
+//        "Thursday" -> food = "granules"
+//        "Friday" -> food = "mosquitoes"
+//        "Sunday" -> food = "plankton"
+//        else -> food = "nothing"
+//    }
+//    return food
+//}
+//
+//fun feedTheFish() {
+//    val day = randomDay()
+//    val food = fishFood(day)
+//
+//    println ("Today is $day and the fish eat $food")
+//}
+
+//3.2.3
+
+//import java.util.*
+//
+//fun main(args: Array<String>) {
+//    feedTheFish()
+//}
+//
+//fun randomDay() : String {
+//    val week = arrayOf("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+//    return week[Random().nextInt(week.size)]
+//}
+//
+//fun fishFood (day : String) : String {
+//    return when (day) {
+//        "Monday" -> "flakes"
+//        "Wednesday" -> "redworms"
+//        "Thursday" -> "granules"
+//        "Friday" -> "mosquitoes"
+//        "Sunday" -> "plankton"
+//        else -> "nothing"
+//    }
+//}
+//
+//fun feedTheFish() {
+//    val day = randomDay()
+//    val food = fishFood(day)
+//
+//    println ("Today is $day and the fish eat $food")
+//}
+
+//4.1.1(2 also)
+
+//fun swim(speed: String = "fast") {
+//    println("swimming $speed")
+//}
+//
+//
+//
+//fun main(args: Array<String>) {
+//    swim()
+//    swim("slow")
+//    swim(speed = "turtle-like")
+//}
+
+//4.2.1(2 also)
+
 //import java.util.*
 //
 //fun feedTheFish() {
 //    val day = randomDay()
 //    val food = fishFood(day)
 //    println ("Today is $day and the fish eat $food")
+//    println("Change water: ${shouldChangeWater(day)}")
 //}
 //
 //fun main(args: Array<String>) {
@@ -76,22 +214,17 @@
 //        else -> "nothing"
 //    }
 //}
-
-//4.1
-
-//fun swim(speed: String = "fast") {
-//    println("swimming $speed")
-//}
 //
-//
-//
-//fun main(args: Array<String>) {
-//    swim()
-//    swim("slow")
-//    swim(speed = "turtle-like")
+//fun shouldChangeWater (day: String, temperature: Int = 22, dirty: Int = 20): Boolean {
+//    return when {
+//        temperature > 30 -> true
+//        dirty > 30 -> true
+//        day == "Sunday" ->  true
+//        else -> false
+//    }
 //}
 
-//4.2
+//4.3.1(2 also)
 
 //import java.util.*
 //
@@ -126,8 +259,8 @@
 //    return when {
 //        isTooHot(temperature) -> true
 //        isDirty(dirty) -> true
-//        isSunday(day) -> true
-//        else  -> false
+//        isSunday(day) ->  true
+//        else -> false
 //    }
 //}
 //
@@ -137,7 +270,7 @@
 //
 //fun isSunday(day: String) = day == "Sunday"
 
-//5.1
+//5.1.1(2 also)
 
 //val decorations = listOf ("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
 //
